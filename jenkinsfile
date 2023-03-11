@@ -1,0 +1,12 @@
+pipeline {
+
+    stages{
+
+        stage('Git Checkout'){
+
+            steps{
+                git branch: 'main', url: 'https://github.com/anjankdey18/demoCounterApp.git'
+            }
+        }
+    }
+}
